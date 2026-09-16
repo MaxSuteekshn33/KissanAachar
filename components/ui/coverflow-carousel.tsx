@@ -291,7 +291,8 @@ export function CoverflowCarousel({
               type="button"
               aria-label="Previous slide"
               onClick={() => nudge(-1)}
-              className="absolute left-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-kissan-paper/80 p-2 text-kissan-green-deep backdrop-blur transition hover:bg-kissan-paper"
+              className="glass-pill absolute top-1/2 z-[200] -translate-y-1/2 rounded-full p-2.5 text-kissan-green-deep transition hover:scale-105 hover:bg-white/40 active:scale-95"
+              style={{ left: "max(4px, calc(50% - var(--cf-card) * 1.32))" }}
             >
               <ChevronLeft className="size-5" />
             </button>
@@ -299,7 +300,8 @@ export function CoverflowCarousel({
               type="button"
               aria-label="Next slide"
               onClick={() => nudge(1)}
-              className="absolute right-3 top-1/2 z-[200] -translate-y-1/2 rounded-full bg-kissan-paper/80 p-2 text-kissan-green-deep backdrop-blur transition hover:bg-kissan-paper"
+              className="glass-pill absolute top-1/2 z-[200] -translate-y-1/2 rounded-full p-2.5 text-kissan-green-deep transition hover:scale-105 hover:bg-white/40 active:scale-95"
+              style={{ right: "max(4px, calc(50% - var(--cf-card) * 1.32))" }}
             >
               <ChevronRight className="size-5" />
             </button>
@@ -322,7 +324,7 @@ export function CoverflowCarousel({
           {active.href && (
             <a
               href={active.href}
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-kissan-red px-5 py-2 text-sm font-semibold text-white transition hover:bg-kissan-terracotta"
+              className="glass-red mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-white transition hover:scale-[1.03] active:scale-[0.98]"
             >
               Trace this jar's journey
               <ChevronRight className="size-4" />

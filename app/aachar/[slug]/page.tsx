@@ -35,7 +35,7 @@ export default async function AacharPage({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-kissan-green-deep/90 via-kissan-green-deep/20 to-kissan-green-deep/40" />
         <div className="relative z-10 w-full px-6 pb-16 pt-40 text-kissan-cream sm:px-10">
-          <p className="inline-flex items-center gap-1.5 rounded-full border border-kissan-cream/40 px-3 py-1 text-xs">
+          <p className="glass-pill-dark inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs text-kissan-cream">
             <MapPin className="size-3.5" />
             {aachar.region}
           </p>
@@ -51,7 +51,7 @@ export default async function AacharPage({
       {/* Your bottle */}
       <section className="bg-kissan-paper py-16">
         <div className="mx-auto max-w-4xl px-6">
-          <div className="flex flex-col items-start justify-between gap-6 rounded-3xl border border-kissan-tan/60 bg-kissan-cream p-8 sm:flex-row sm:items-center">
+          <div className="glass-card flex flex-col items-start justify-between gap-6 rounded-[2rem] p-8 sm:flex-row sm:items-center">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-kissan-terracotta">
                 Your Bottle
@@ -68,8 +68,8 @@ export default async function AacharPage({
                 <dd className="font-medium text-kissan-green-deep">{aachar.edition}</dd>
               </dl>
             </div>
-            <div className="flex size-20 shrink-0 items-center justify-center rounded-2xl bg-kissan-green-deep text-kissan-cream">
-              <QrCode className="size-10" />
+            <div className="glass-orb flex size-20 shrink-0 items-center justify-center rounded-2xl text-kissan-cream">
+              <QrCode className="relative z-10 size-10" />
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default async function AacharPage({
               {aachar.ingredientStory}
             </p>
           </div>
-          <div className="rounded-3xl border border-kissan-tan/60 bg-kissan-paper p-6">
+          <div className="glass-card rounded-[2rem] p-6">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-kissan-terracotta">
               Landscape
             </p>
@@ -154,7 +154,7 @@ export default async function AacharPage({
               <Link
                 key={other.slug}
                 href={`/aachar/${other.slug}`}
-                className="group flex items-center gap-4 rounded-2xl border border-kissan-tan/60 bg-kissan-paper p-4 transition hover:border-kissan-red"
+                className="glass-card group flex items-center gap-4 rounded-2xl p-4 transition hover:scale-[1.02]"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

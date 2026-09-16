@@ -37,7 +37,7 @@ export default function Home() {
           </p>
           <Link
             href="#collection"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-kissan-red px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-kissan-terracotta"
+            className="glass-red mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition hover:scale-[1.03] active:scale-[0.98]"
           >
             Start the Journey
             <ArrowDown className="size-4" />
@@ -83,7 +83,7 @@ export default function Home() {
       <section className="bg-kissan-green-deep py-20 text-kissan-cream">
         <div className="mx-auto grid max-w-5xl gap-12 px-6 sm:grid-cols-2">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full border border-kissan-cream/30 px-3 py-1.5 text-xs">
+            <p className="glass-pill-dark inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs text-kissan-cream">
               <ScanLine className="size-3.5" />
               Batch-level transparency
             </p>
