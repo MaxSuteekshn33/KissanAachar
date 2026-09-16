@@ -26,7 +26,7 @@ export default async function AacharPage({
       <SiteHeader />
 
       {/* Region hero */}
-      <section className="relative flex min-h-[80vh] w-full items-end overflow-hidden bg-kissan-green-deep">
+      <section className="relative flex min-h-[80dvh] w-full items-end overflow-hidden bg-kissan-green-deep">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={aachar.heroImage}

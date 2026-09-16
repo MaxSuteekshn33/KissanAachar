@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { CollectionCarousel } from "@/components/collection-carousel";
 import { JourneyStrip } from "@/components/journey-strip";
+import { HeroVideo } from "@/components/hero-video";
 
 const GENERIC_JOURNEY = [
   { label: "Farm", detail: "Growing with care, region by region" },
@@ -20,16 +21,8 @@ export default function Home() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="relative flex h-[100vh] min-h-[640px] w-full items-center justify-center overflow-hidden bg-kissan-green-deep">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover opacity-90"
-        >
-          <source src="/media/hero-journey.mp4" type="video/mp4" />
-        </video>
+      <section className="relative flex min-h-[max(100dvh,640px)] w-full items-center justify-center overflow-hidden bg-kissan-green-deep">
+        <HeroVideo />
         <div className="absolute inset-0 bg-gradient-to-b from-kissan-green-deep/70 via-kissan-green-deep/30 to-kissan-green-deep/90" />
         <div className="relative z-10 mx-auto max-w-2xl px-6 text-center text-kissan-cream">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-kissan-cream/70">
